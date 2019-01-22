@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>basic 4</title>
+
+</head>
+<body>
+	<h1>Weather</h1>
+	
+	<script>
+	function randomTemperature(){
+
+			var randomNum = Math.floor((Math. random() * 55) -  15);     // set a randomNumber with Math.floor and Math random (get numbers between 0-1)   with * 40 and -15 we start to count from -15 to 40!
+			if(randomNum >= -5 && randomNum <=10){						// randomNumber has to be bigger  or equal - 5 in this case and smaller equal 10!
+				document.write("It has " + randomNum + " degrees. The weather is cold"); 		
+			}
+			else if(randomNum >=11 && randomNum <=32){
+				document.write("It has " + randomNum + " degrees. The weather is moderate");
+			}
+         else{
+         	document.write("It has " + randomNum + " degrees. The weather is hot");
+         } 
+
+		}
+		randomTemperature();											// run the function !
+	</script>			
+	
+</body>
+</html>
