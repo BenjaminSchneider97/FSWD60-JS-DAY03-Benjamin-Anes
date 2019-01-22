@@ -5,9 +5,26 @@
 	<title>basic 3</title>
 </head>
 <body>
+
+
+
 	<script>
-		
-	</script>
-	
+		function productarray(){
+			var randomNum1 = Math.floor((Math. random() * 10) + 1);
+			var randomNum2 = Math.floor((Math. random() * 10) + 1);
+			var randomNum3 = Math.floor((Math. random() * 10) + 1);
+			var randomNum4 = Math.floor((Math. random() * 10) + 1);
+
+			var arr =[randomNum1,randomNum2,randomNum3,randomNum4];
+
+			document.write(randomNum1+"<br>"+randomNum2+"<br>"+randomNum3+"<br>"+randomNum4+"<br>");
+			var result = 1; //we start our result at 1 and not at zero because we have to multiply our first index with 1 e.g: 0*12 would be 0 
+			for (i=0; i < arr.length; i++){ //loop starts at index 0, goes on for the length of the array and increases the index by 1 each loop
+				result = result*arr[i]; //we have our result, 1 at the beginning and multiply it with the first index of the array and store that product in the result arry and later multiply that with the following indexes
+			}
+			document.write(result);  //we dislay our final result
+		}
+		productarray();
+	</script>	
 </body>
 </html>
