@@ -9,11 +9,11 @@
 
 			var randomNum = Math.floor((Math. random() * 25) -  5);     // set a randomNumber with Math.floor and Math random (get numbers between 0-1)   with * 25 and -5 we start to count from -5 to 25!
 			if(randomNum >= -5 && randomNum <=10){						// randomNumber has to be bigger  or equal - 5 in this case and smaller equal 10!
-				document.write("The weather is cold"); 		
+				document.write("It has " + randomNum + " degrees. The weather is cold"); 		
 			}
 
          else{
-         	document.write("The weather is moderate");
+         	document.write("It has " + randomNum + " degrees. The weather is moderate");
          } 
 		}
 		randomTemperature();											// run the function !
