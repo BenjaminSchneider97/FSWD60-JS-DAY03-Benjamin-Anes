@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>basic 4</title>
 	<style type="text/css">
-		body{
+		/* body{
 			background-color: #95a5a6;
-		}
+		} */
 		.wrapper{
 			text-align: center;
 		}
@@ -34,7 +34,6 @@
 			}
 		}
 	</style>
-
 </head>
 <body>
 	<div class="wrapper">
@@ -44,23 +43,24 @@
 		</div>
 		<script>
 		function randomTemperature(){
-
 				var randomNum = Math.floor((Math. random() * 55) -  15);
 				if(randomNum >= -15 && randomNum <=10){
 					document.getElementById("text").innerHTML = "It has " + randomNum + " degrees. The weather is cold."; 
-					document.getElementById("img").innerHTML = '<img src="cold.jpg" alt="">'		
+					document.getElementById("img").innerHTML = '<img src="cold.jpg" alt="">';
+					document.body.style.background = "lightblue" ;
 				}
 				else if(randomNum >=11 && randomNum <=32){
 					document.getElementById("text").innerHTML = "It has " + randomNum + " degrees. The weather is moderate."; 
-					document.getElementById("img").innerHTML = '<img src="moderate.jpg" alt="">'
+					document.getElementById("img").innerHTML = '<img src="moderate.jpg" alt="">';
+					document.body.style.background = "green";
 				}
 	        	 else{
 	         		document.getElementById("text").innerHTML = "It has " + randomNum + " degrees. The weather is hot."; 
-	         		document.getElementById("img").innerHTML = '<img src="hot.jpg" alt="">'
+	         		document.getElementById("img").innerHTML = '<img src="hot.jpg" alt="">';
+	         		document.body.style.background = "red" ;
 	        	 } 
 			}
 			randomTemperature();
 		</script>			
-	
 </body>
 </html>
